@@ -128,7 +128,7 @@ PROCESSEDITORINPUT
 			} else		// UnComment
 			{
 				if (egs.StringLength > 1) {
-					if (egs.StringText[0] == '#') && (egs.StringText[1] == ' ') {
+					if (egs.StringText[0] == '#' && egs.StringText[1] == ' ') {
 						Info.EditorControl(ECTL_DELETECHAR, NULL);
 						Info.EditorControl(ECTL_DELETECHAR, NULL);
 					}
